@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e4dbf4;
+    color: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.genel_h2{
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.genel_h2 span{
+    font-size: 20px;
+    color: #b36cd2;
+    font-weight: bold;
+}
+
+.yemek-h2{
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+input,
+button{
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 5px 5px 0 5px;
+    outline: none;
+}
+
+input{
+    width: 250px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.meal{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.meal img{
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.meal-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    color: #fff;
+}
+
+.meal:hover .meal-info{
+    opacity: 1;
+}
+
+h3{
+    font-size: 18px;
+}
+
+.meal .single-meal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.single-meal h1{
+    font-size: 20px;
+}
+
+.single-meal img{
+    width: 250px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.single-meal-info{
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.single-meal a{
+    font-size: 15px;
+    color: blue;
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+    margin: 10px 0 40px 0;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main h2{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+ul li{
+    border-radius: 5px;
+    background-color: #c9baf1;
+    display: inline-block;
+    color: #2c225d;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .meals{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: auto;
+    }   
+    p{
+        margin: 0 10px;
+    }
+}
